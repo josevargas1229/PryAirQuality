@@ -1,0 +1,52 @@
+import { StyleSheet } from "react-native";
+export const styles = StyleSheet.create({
+  datos:{
+    color:'white'
+  },
+  datosBold:{
+    color:'white',
+    fontWeight:'bold',
+    fontSize:15
+  },
+  title:{
+    color:'#AFCAF3',
+    fontWeight:'bold',
+    marginBottom:15,
+    fontSize:16
+  },
+  texto:{
+    color:'#AFCAF3'
+  },
+  container:{
+    backgroundColor:'#4183D1',
+    marginHorizontal:15,
+    borderRadius:20,
+    padding:15,
+    marginBottom:10
+  },
+  hContainer:{
+    marginRight:25,
+    alignItems: 'center',
+  },
+  vContainer:{
+    flexDirection: 'row',
+    alignItems:'center'
+  },
+  datosContainer:{
+    alignItems:'center',
+    marginBottom:150,
+    alignContent:'space-between',
+    padding:10
+  },
+  lugar:{
+    color:'white',
+    fontWeight:'bold',
+    fontSize:25,
+    marginBottom:100,
+    marginTop:-10
+  },
+  temperatura:{
+    color:'white',
+    fontSize:80,
+  }
+});
