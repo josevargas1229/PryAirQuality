@@ -51,12 +51,17 @@ export const styles = StyleSheet.create({
   headerContainer: {
     alignItems: 'center',
     paddingVertical: 10, // Ajusta este valor según sea necesario
-    marginTop: -250, // Ajusta este valor para mover hacia arriba
+    marginTop: -20, // Ajusta este valor para mover hacia arriba
   },
   headerTemperatureContainer: {
     flexDirection: 'row',
     alignItems: 'flex-end',
     marginBottom: -10, // Ajusta este valor según sea necesario
+  },
+  map: {
+    width: '100%',
+    height: 200,
+    marginVertical: 20, // Ajusta este valor según sea necesario
   },
   contentContainer: {
     padding: 16,

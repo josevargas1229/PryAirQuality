@@ -1,6 +1,6 @@
-
 import React, { useEffect, useState, ReactNode } from 'react';
 import { View, Text, Alert, ActivityIndicator, FlatList, Image, ScrollView } from 'react-native';
+import MapView, { Marker } from 'react-native-maps';
 import { styles } from './Estilos';
 
 interface ClimaProps {
@@ -76,6 +76,24 @@ const Clima: React.FC<ClimaProps> = ({ children, backgroundColor, contentBackgro
                     <Text style={styles.texto}>/</Text>
                     <Text style={styles.datosBold}> {data.forecast.forecastday[0].day.mintemp_c} °C  </Text>
                 </View>
+                <MapView
+                    style={styles.map}
+                    region={{
+                        latitude: data.location.lat,
+                        longitude: data.location.lon,
+                        latitudeDelta: 0.05,
+                        longitudeDelta: 0.05,
+                    }}
+                >
+                    <Marker
+                        coordinate={{
+                            latitude: data.location.lat,
+                            longitude: data.location.lon,
+                        }}
+                        title={data.location.name}
+                        description={data.location.region}
+                    />
+                </MapView>
             </View>
             <View style={styles.container}>
                 <Text style={styles.title}>Pronóstico de 5 días</Text>
