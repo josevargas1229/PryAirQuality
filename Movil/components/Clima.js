@@ -5,6 +5,7 @@ import { styles } from './Estilos'
 const Clima = () => {
     const [data, setData] = useState(null)
     const [load, setLoad] = useState(false)
+//cambios
 
     useEffect(() => {
         fetch('http://api.weatherapi.com/v1/forecast.json?key=1fb72a14371346eb839225803230910&q=huejutla&days=5&aqi=no&alerts=no&lang=es')
